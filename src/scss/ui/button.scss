@@ -1,0 +1,55 @@
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  color: inherit;
+}
+
+.btn-main {
+  @include flex-center;
+  background-color: var(--black);
+  border: 1px solid var(--black);
+  padding: 8px 14px;
+  border-radius: 8px;
+  min-height: 51px;
+  width: 100%;
+  text-align: center;
+
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color .2s ease, background-color .2s ease;
+  @include hover {
+    color: var(--black);
+    background-color: transparent;
+  }
+
+  &._white {
+    background-color: white;
+    border-color: white;
+    color: var(--black);
+    @include hover {
+      background-color: transparent;
+      color: white;
+    }
+
+    &._stroke {
+      color: white;
+      @include hover {
+        background-color: white;
+        color: var(--black);
+      }
+    }
+  }
+
+  &._stroke {
+    background-color: transparent;
+    color: var(--black);
+    @include hover {
+      background-color: var(--black);
+      color: white;
+    }
+  }
+}

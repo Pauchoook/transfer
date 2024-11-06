@@ -1,0 +1,78 @@
+.offer {
+  padding-bottom: 56px;
+  @include tablet-min {
+    padding-bottom: 176px;
+  }
+  &__body {
+    border-radius: 48px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+    min-height: 580px;
+    @include tablet {
+      min-height: 420px;
+    }
+    @include mobile {
+      min-height: 300px;
+    }
+  }
+  &__info {
+    position: absolute;
+    padding: 30px;
+    border-radius: 16px;
+    left: 110px;
+    backdrop-filter: blur(11px);
+    background: linear-gradient(136deg, rgba(125, 125, 125, 0.1) 0%, rgba(77, 77, 77, 0.1) 100%);
+    max-width: 580px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    @include laptop-min {
+      left: 20px;
+      right: 20px;
+      max-width: none;
+    }
+    @include tablet {
+      padding: 16px;
+    }
+    @include tablet-min {
+      top: 175px;
+    }
+  }
+  &__title {
+    max-width: 480px;
+    margin-bottom: 32px;
+  }
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    @include tablet {
+      gap: 16px;
+    }
+  }
+  &__btn {
+    width: calc(50% - 12px);
+    @include tablet {
+      will-change: calc(50% - 8px);
+    }
+    @include tablet-min {
+      width: 100%;
+      &._white {
+        background-color: var(--black);
+        border-color: var(--black);
+        color: white;
+        @include hover {
+          color: var(--black);
+        }
+      }
+      &._stroke {
+        background-color: transparent;
+        color: var(--black) !important;
+        @include hover {
+          background-color: var(--black) !important;
+          color: white !important;
+        }
+      }
+    }
+  }
+}

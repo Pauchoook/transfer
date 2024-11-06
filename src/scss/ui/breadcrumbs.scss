@@ -1,0 +1,35 @@
+.breadcrumbs {
+  @include flex-center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  gap: 8px;
+
+  li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 120%;
+    &:not(:last-child) {
+      padding-right: 14px;
+      &::before {
+        position: absolute;
+        content: "/";
+        right: 0;
+      }
+    }
+    &:last-child {
+      font-weight: 400;
+      color: rgba(51, 51, 51, 0.5);
+    }
+  }
+
+  a {
+    transition: color 0.2s ease;
+    @include hover {
+      color: var(--primary);
+    }
+  }
+}

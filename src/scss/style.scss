@@ -1,0 +1,35 @@
+@import "./fonts/fonts";
+@import "./base/normalize";
+@import "./base/vars";
+@import "./base/templates";
+@import "./base/settings";
+@import "./base/media";
+@import "./base/body-config";
+@import "./base/config-container";
+
+// ui
+@import "./ui/button";
+@import "./ui/list";
+@import "./ui/dropdown";
+@import "./ui/title";
+@import "./ui/select";
+@import "./ui/form";
+@import "./ui/more";
+@import "./ui/breadcrumbs";
+
+// components
+@import "./components/header";
+
+@import "./components/hero";
+@import "./components/about";
+@import "./components/schedule";
+@import "./components/benefits";
+@import "./components/success";
+@import "./components/reviews";
+@import "./components/pricing";
+@import "./components/media-center";
+@import "./components/offer";
+@import "./components/reserv";
+@import "./components/contact";
+
+@import "./components/footer";

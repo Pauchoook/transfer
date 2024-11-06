@@ -1,0 +1,123 @@
+.success {
+  @include tablet {
+    padding-bottom: 230px;
+  }
+  &__body {
+    position: relative;
+    border-radius: 48px;
+    min-height: 600px;
+    z-index: 1;
+    @include tablet {
+      min-height: 420px;
+    }
+    @include mobile {
+      min-height: 335px;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: black;
+      border-radius: 48px;
+      opacity: 0.5;
+      inset: 0;
+      z-index: -1;
+    }
+  }
+  &__info {
+    position: absolute;
+    padding: 30px 30px 60px 30px;
+    border-radius: 16px;
+    color: white;
+    backdrop-filter: blur(11px);
+    max-width: 585px;
+    top: 50%;
+    right: 105px;
+    transform: translateY(-50%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: linear-gradient(136deg, rgba(125, 125, 125, 0.1) 0%, rgba(77, 77, 77, 0.1) 100%);
+    @include laptop-min {
+      right: 30px;
+      border: none;
+      background: white;
+      color: var(--black);
+      padding: 24px 16px;
+      max-width: none;
+      left: 12px;
+      right: 12px;
+    }
+    @include tablet {
+      top: 235px;
+      transform: translateY(0);
+      backdrop-filter: blur(11px);
+    }
+    @include mobile {
+      top: 235px;
+    }
+  }
+  &__title {
+    margin-bottom: 16px;
+  }
+  &__content {
+    font-size: 16px;
+    line-height: 125%;
+    margin: 0px 0px 30px 0px;
+    @include tablet {
+      font-size: 14px;
+      line-height: 129%;
+      margin-bottom: 16px;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+    @include tablet {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+  &__item {
+    position: relative;
+    &:not(:last-child) {
+      padding-right: 30px;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 100%;
+        background-color: white;
+        right: 0;
+      }
+    }
+    @include tablet {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      &:not(:last-child) {
+        padding-right: 0;
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+  &__number {
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 8px;
+    color: var(--primary);
+    @include tablet {
+      margin-bottom: 0;
+    }
+  }
+  &__item-content {
+    margin: 0;
+    font-size: 16px;
+    line-height: 125%;
+    @include tablet {
+      font-size: 14px;
+      line-height: 129%;
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.pricing {
+  position: relative;
+  padding-bottom: 420px;
+  z-index: 1;
+  @include laptop {
+    padding-bottom: 305px;
+  }
+  @include tablet {
+    padding-bottom: 180px;
+  }
+  &__title {
+    margin-bottom: 16px;
+  }
+  &__content {
+    max-width: 690px;
+    font-size: 20px;
+    line-height: 120%;
+    margin: 0px 0px 30px 0px;
+    @include tablet {
+      font-size: 16px;
+      line-height: 125%;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    @include laptop {
+      gap: 20px;
+    }
+    @include laptop-min {
+      gap: 14px;
+    }
+  }
+  &__item {
+    background-color: white;
+    border-radius: 8px;
+    flex: 0 1 calc(25% - 24px);
+    padding: 24px;
+    @include laptop {
+      flex-basis: calc(25% - 15px);
+    }
+    @include laptop-min {
+      flex-basis: calc(50% - 7px);
+    }
+    @include tablet {
+      padding: 16px;
+    }
+  }
+  &__item-title {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 125%;
+    margin-bottom: 16px;
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+  &__item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+
+    li {
+      font-size: 16px;
+      line-height: 112%;
+      @include tablet {
+        font-size: 12px;
+      }
+    }
+  }
+  &__item-price {
+    display: block;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 125%;
+    margin-bottom: 16px;
+    @include tablet {
+      font-size: 20px;
+    }
+  }
+  &__item-btn {
+    justify-content: center;
+    gap: 16px;
+    max-width: 160px;
+    @include tablet {
+      min-height: 44px;
+    }
+  }
+  &__item-arrow {
+    width: 10px;
+    height: 10px;
+    transform: rotate(-90deg);
+  }
+  &__gallery {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 32px);
+    z-index: -1;
+    @include tablet {
+      width: calc(100% - 16px);
+      border-radius: 32px;
+    }
+  }
+  &__wrapper-img {
+    position: relative;
+    border-radius: 48px;
+    overflow: hidden;
+    width: 100%;
+    &::before {
+      position: absolute;
+      content: "";
+      inset: 0;
+      background-color: rgba(0,0,0,0.25);
+      z-index: 1;
+    }
+  }
+  &__img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    @include tablet {
+      height: 220px;
+      object-fit: cover;
+    }
+  }
+}

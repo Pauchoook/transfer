@@ -1,0 +1,62 @@
+.about {
+  padding: 56px 0px;
+  @include tablet {
+    padding: 40px 0px;
+  }
+  &__head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px;
+    margin-bottom: 24px;
+  }
+  &__title {
+  }
+  &__info {
+    font-size: 16px;
+    max-width: 585px;
+  }
+  &__content {
+    font-size: 16px;
+    @include tablet {
+      font-size: 14px;
+    }
+    strong {
+      font-weight: 500;
+    }
+  }
+  &__btn {
+    max-width: 205px;
+    margin-top: 16px;
+  }
+  &__gallery {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+    @include tablet {
+      flex-direction: column-reverse;
+    }
+  }
+  &__img {
+    width: calc(50% - 15px);
+    border-radius: 16px;
+    object-fit: cover;
+    &:first-child {
+      height: 300px;
+    }
+    &:last-child {
+      height: 175px;
+    }
+    @include tablet {
+      &:first-child {
+        width: 100%;
+        height: auto;
+      }
+      &:last-child {
+        width: 130px;
+        height: 130px;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.title {
+  margin: 0;
+  font-weight: 500;
+}
+.title-2 {
+  font-size: 48px;
+  line-height: 100%;
+  @include laptop-min {
+    font-size: 42px;
+  }
+  @include tablet {
+    font-size: 36px;
+  }
+  @include mobile {
+    font-size: 32px;
+    line-height: 112%;
+  }
+
+  span {
+    color: var(--primary);
+  }
+}

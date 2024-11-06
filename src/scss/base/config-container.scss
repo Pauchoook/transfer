@@ -1,0 +1,17 @@
+:root {
+  --content-width: 1410px;
+  --content-width-min: 1190px;
+  --offset-width: 16px;
+  --container-width: calc(var(--content-width) + (var(--offset-width) * 2));
+  --container-width-min: calc(var(--content-width-min) + (var(--offset-width) * 2));
+}
+
+.container {
+  max-width: var(--container-width);
+  width: 100%;
+  padding: 0 var(--offset-width);
+  margin: 0 auto;
+  &._min {
+    max-width: var(--container-width-min);
+  }
+}

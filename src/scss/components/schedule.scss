@@ -1,0 +1,150 @@
+.schedule {
+  &__container {
+    padding: 0 8px;
+  }
+  &__body {
+    border-radius: 32px;
+    background-color: var(--black);
+    color: white;
+    padding: 40px 0px;
+    @include tablet {
+      padding: 32px 0px;
+      border-radius: 24px;
+      .container {
+        padding: 0 28px;
+      }
+    }
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 8px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    @include tablet {
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+  &__online {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0px 18px 0px 32px;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+    }
+    &::before {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: var(--green);
+      left: 0;
+    }
+    &::after {
+      height: 100%;
+      width: 2px;
+      background-color: white;
+      right: 0;
+    }
+  }
+  &__title {
+    margin-bottom: 16px;
+    @include tablet {
+      margin-bottom: 16px;
+    }
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+  &__content {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    margin: 0px 0px 32px 0px;
+    @include tablet {
+      font-size: 14px;
+      line-height: 129%;
+      margin-bottom: 32px;
+    }
+  }
+  &__table {
+    overflow-x: auto;
+    @include tablet {
+      margin: 0 -28px;
+      padding: 0 28px;
+    }
+  }
+  &__table-body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-size: 16px;
+    line-height: 125%;
+    width: 1190px;
+    @include tablet {
+      gap: 16px;
+    }
+  }
+  &__table-head {
+    display: flex;
+    font-weight: 500;
+    gap: 24px;
+    @include tablet {
+      gap: 16px;
+    }
+  }
+  &__head-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    flex-shrink: 0;
+    &:first-child {
+      flex: 0 0 54px;
+    }
+  }
+  &__table-icon {
+    width: 20px;
+    height: 20px;
+  }
+  &__table-row {
+    display: flex;
+    gap: 24px;
+    @include tablet {
+      gap: 16px;
+    }
+  }
+  &__talbe-item {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: var(--shaft);
+    flex: 1;
+    flex-shrink: 0;
+    min-height: 52px;
+    &:first-child {
+      justify-content: center;
+      flex: 0 0 54px;
+    }
+  }
+  &__btn {
+    @include flex-center;
+    gap: 16px;
+    max-width: 170px;
+    margin-top: 32px;
+    @include mobile {
+      max-width: none;
+    }
+  }
+  &__btn-arrow {
+    width: 12px;
+    height: 8px;
+  }
+}

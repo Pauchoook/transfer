@@ -1,0 +1,85 @@
+.select {
+  position: relative;
+  width: 100%;
+  &.open {
+    .select__btn {
+      border-radius: 8px 8px 0px 0px;
+    }
+    .select__arrow {
+      transform: rotate(180deg);
+    }
+    .select__item {
+      transform: translateY(0);
+      visibility: visible;
+      opacity: 1;
+    }
+
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    padding: 8px 15px 8px 12px;
+    width: 100%;
+    text-align: start;
+    background-color: var(--athens);
+    transition: border-radius .2s ease;
+  }
+  &__input {
+    // display: none;
+    pointer-events: none;
+    width: 100%;
+    font-size: 14px;
+    line-height: 129%;
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    &::placeholder {
+      color: inherit;
+      font-size: inherit;
+    }
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  &__arrow {
+    width: 10px;
+    height: 10px;
+    flex-shrink: 0;
+    transition: transform .2s ease;
+  }
+  &__item {
+    @include scrollbar;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    overflow-y: auto;
+    background-color: var(--athens);
+    max-height: 152px;
+    border-radius: 0px 0px 8px 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+    transition: opacity .4s ease, transform .4s ease, visibility .4s ease;
+  }
+  &__item-btn {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 129%;
+    color: var(--dark);
+    padding: 10px;
+    transition: background-color .2s ease, color .2s ease;
+    @include hover {
+      background-color: var(--primary);
+      color: white;
+    }
+  }
+}

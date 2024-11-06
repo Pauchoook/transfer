@@ -1,0 +1,197 @@
+.form {
+  color: white;
+  &__wrapper {
+    padding: 24px 22px;
+    background-color: var(--black);
+    border-radius: 16px;
+    color: white;
+    @include tablet {
+      padding: 16px;
+    }
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  &__head-icon {
+    width: 20px;
+    height: 20px;
+  }
+  &__head-title {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  &__head-line {
+    flex: 1;
+    height: 2px;
+    background-color: currentColor;
+  }
+  &__item-title {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  &__input-check {
+    display: none;
+    &:checked + label {
+      &::after {
+        display: block;
+      }
+    }
+  }
+  &__label-check {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      border-radius: 50%;
+    }
+    &::before {
+      left: 0;
+      width: 16px;
+      height: 16px;
+      border: 1px solid currentColor;
+    }
+    &::after {
+      width: 12px;
+      height: 12px;
+      left: 2px;
+      background-color: currentColor;
+      display: none;
+    }
+  }
+  &__row {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 24px;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+    @include laptop-min {
+      gap: 16px;
+    }
+  }
+  &__wrapper-row-item {
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+    gap: 24px;
+    @include laptop-min {
+      gap: 16px;
+    }
+  }
+  &__row-item {
+    flex: 1;
+    &._half {
+      flex: 0 1 calc(50% - 12px);
+    }
+    &._full {
+      flex: 0 1 100%;
+    }
+    @include laptop {
+      flex: 0 1 calc(50% - 12px);
+    }
+    @include tablet {
+      flex-basis: 100% !important;
+    }
+  }
+  &__input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 16px;
+    display: flex;
+    align-items: center;
+    min-height: 45px;
+    background-color: var(--shaft);
+
+    font-size: 16px;
+    color: inherit;
+    &::placeholder {
+      font-size: inherit;
+      color: inherit;
+    }
+
+    &[type="number"]::-webkit-outer-spin-button,
+    &[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &._textarea {
+      resize: none;
+      min-height: 170px;
+      padding: 16px;
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    max-width: 150px;
+    @include mobile {
+      max-width: none;
+    }
+  }
+  &__btn-arrow {
+    width: 12px;
+    height: 12px;
+  }
+
+  .select {
+    color: inherit;
+    &__btn {
+      background-color: var(--shaft);
+      min-height: 45px;
+    }
+    &__title {
+      color: inherit;
+    }
+    &__item {
+      background-color: var(--shaft);
+    }
+    &__item-btn {
+      color: inherit;
+    }
+  }
+}
+
+.input-simple {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+  width: 100%;
+  font-size: inherit;
+}
+
+.select-input {
+  position: relative;
+  &__input {
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    &::-webkit-calendar-picker-indicator {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+    }
+  }
+}
