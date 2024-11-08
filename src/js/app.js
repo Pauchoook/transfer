@@ -9,6 +9,7 @@ import selectInput from "./files/selectInput.js";
 import { reserveLink, sides } from "./files/reserve.js";
 import more from "./files/more.js";
 import initSelectInput from "./files/initSelectInput.js";
+import headerScroll from "./files/headerScroll.js";
 
 functions.mediaAdaptive();
 spoller();
@@ -20,3 +21,4 @@ reserveLink();
 more();
 initSelectInput();
 sides();
+headerScroll();

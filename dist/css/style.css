@@ -632,7 +632,8 @@ body {
   left: 0;
   right: 0;
   color: #fff;
-  z-index: 100
+  z-index: 100;
+  transition: background-color .2s ease
 }
 .header._black {
   background-color: var(--black)

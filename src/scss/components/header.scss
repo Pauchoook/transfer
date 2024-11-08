@@ -6,6 +6,7 @@
   right: 0;
   color: white;
   z-index: 100;
+  transition: background-color 0.2s ease;
   &._black {
     background-color: var(--black);
   }
@@ -124,7 +125,9 @@
         max-height: 0;
         height: 100%;
         overflow: hidden;
-        transition: max-height .4s ease, padding .4s ease;
+        transition:
+          max-height 0.4s ease,
+          padding 0.4s ease;
       }
     }
   }
@@ -136,7 +139,7 @@
     display: block;
     font-weight: 500;
     font-size: 16px;
-    transition: color .2s ease;
+    transition: color 0.2s ease;
     @include hover {
       color: var(--primary);
     }
