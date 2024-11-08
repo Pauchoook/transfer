@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>pauchoo0k</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241108031028">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="body">
+	<header class="header">
+		<div class="container header__container">
+			<a href="/" class="header__logo">
+				<img src="img/logo.svg" alt="logo" class="header__logo-img" />
+			</a>
+			<nav class="header__nav" id="burger">
+				<ul class="list header__list">
+					<li>
+						<a href="#">Live Schedule</a>
+					</li>
+					<li>
+						<a href="#">Benefits</a>
+					</li>
+					<li>
+						<a href="#">Successes</a>
+					</li>
+					<li>
+						<a href="#">Reviews</a>
+					</li>
+					<li>
+						<a href="#">Price</a>
+					</li>
+					<li>
+						<a href="#">Contact us</a>
+					</li>
+				</ul>
+				<div class="dropdown header__dropdown">
+					<button class="btn dropdown__btn header__dropdown-btn">EN</button>
+					<div class="dropdown__item">
+						<a href="#" class="header__lang-btn">RU</a>
+						<a href="#" class="header__lang-btn">RU</a>
+					</div>
+				</div>
+			</nav>
+			<ul class="list header__social">
+				<li>
+					<a href="#" target="_blank" class="header__social-btn">
+						<svg class="header__social-icon">
+							<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="tel:+7 546 456 456" target="_blank" class="header__social-btn">
+						<svg class="header__social-icon">
+							<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+			<a href="tel:+7 546 456 456" class="header__tel">+7 546 456 456</a>
+			<button class="btn header__burger-btn" id="btn-burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</header>
+
+	<main>
+
+		<section class="hero">
+			<img src="img/hero.jpg" alt="image" class="hero__img">
+			<div class="container">
+				<h1 class="title title-2 hero__title">Individual and affordable airport transfer</h1>
+				<div data-da=".hero, 743, 2" class="hero__body">
+					<div class="hero__item">
+						<h5 class="title hero__item-title">Depature</h5>
+						<div class="select">
+							<button class="btn select__btn">
+								<svg class="select__icon">
+									<use xlink:href="img/icons/icons.svg#icon-location"></use>
+								</svg>
+								<input type="text" class="select__input" placeholder="Daugavpils" id="depature" />
+								<svg class="select__arrow">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</button>
+							<div class="select__item">
+								<span class="select__item-btn">Depature</span>
+								<span class="select__item-btn">New York</span>
+								<span class="select__item-btn">Gothem</span>
+								<span class="select__item-btn">City</span>
+								<span class="select__item-btn">Depature</span>
+								<span class="select__item-btn">New York</span>
+								<span class="select__item-btn">Gothem</span>
+								<span class="select__item-btn">City</span>
+							</div>
+						</div>
+					</div>
+					<div class="hero__item">
+						<h5 class="title hero__item-title">Destination</h5>
+						<div class="select">
+							<button class="btn select__btn">
+								<svg class="select__icon">
+									<use xlink:href="img/icons/icons.svg#icon-location"></use>
+								</svg>
+								<input type="text" class="select__input" placeholder="Destination" id="destination" />
+								<svg class="select__arrow">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</button>
+							<div class="select__item">
+								<span class="select__item-btn">Depature</span>
+								<span class="select__item-btn">New York</span>
+								<span class="select__item-btn">Gothem</span>
+								<span class="select__item-btn">City</span>
+								<span class="select__item-btn">Depature</span>
+								<span class="select__item-btn">New York</span>
+								<span class="select__item-btn">Gothem</span>
+								<span class="select__item-btn">City</span>
+							</div>
+						</div>
+					</div>
+					<div class="hero__item">
+						<h5 class="title hero__item-title">Pick Up Date</h5>
+						<div class="select-input hero__input-wrapper">
+							<svg class="hero__input-icon">
+								<use xlink:href='img/icons/icons.svg#icon-calendar'></use>
+							</svg>
+							<span class="hero__input-title select-input__title">16.11.2024</span>
+							<input type="date" class="select-input__input input-date">
+							<svg class="hero__input-arrow">
+								<use xlink:href='img/icons/icons.svg#icon-arrow'></use>
+							</svg>
+						</div>
+					</div>
+					<div class="hero__item">
+						<h5 class="title hero__item-title">Pick Up Time</h5>
+						<div class="select-input hero__input-wrapper">
+							<svg class="hero__input-icon">
+								<use xlink:href='img/icons/icons.svg#icon-time'></use>
+							</svg>
+							<span class="hero__input-title select-input__title">19:47</span>
+							<input type="time" class="select-input__input input-time">
+							<svg class="hero__input-arrow">
+								<use xlink:href='img/icons/icons.svg#icon-arrow'></use>
+							</svg>
+						</div>
+					</div>
+					<div class="hero__item">
+						<h5 class="title hero__item-title">Passengers</h5>
+						<div class="select">
+							<button class="btn select__btn">
+								<svg class="select__icon">
+									<use xlink:href="img/icons/icons.svg#icon-profile"></use>
+								</svg>
+								<input type="text" class="select__input" placeholder="1-8" id="passengers" />
+								<svg class="select__arrow">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</button>
+							<div class="select__item">
+								<span class="select__item-btn">1-8</span>
+								<span class="select__item-btn">2-8</span>
+								<span class="select__item-btn">3-8</span>
+								<span class="select__item-btn">4-8</span>
+								<span class="select__item-btn">5-8</span>
+								<span class="select__item-btn">6-8</span>
+								<span class="select__item-btn">7-8</span>
+								<span class="select__item-btn">8-8</span>
+							</div>
+						</div>
+					</div>
+					<div class="hero__item">
+						<h5 class="title hero__item-title">Flight number</h5>
+						<div class="hero__input-wrapper">
+							<svg class="hero__input-icon">
+								<use xlink:href='img/icons/icons.svg#icon-plane'></use>
+							</svg>
+							<input type="text" placeholder="FR1964, BT1454..." class="input-simple hero__input-title" id="flight-number">
+						</div>
+					</div>
+					<a href="#" class="btn-main hero__btn" id="reserve-btn">
+						<span>Reserve</span>
+						<svg class="hero__btn-arrow">
+							<use xlink:href='img/icons/icons.svg#icon-arrow'></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="about">
+			<div class="container _min">
+				<div class="about__head">
+					<h2 class="title title-2 about__title">About <span>us</span></h2>
+					<div class="about__info">
+						<p class="about__content">
+							We specialize in individual passenger transportation in cars and minibuses. Our priority
+							is comfort, safety and punctuality. We offer stylish black and white cars for all needs -
+							from business trips to personal transfers, with a choice of bright solutions for special
+							occasions. Trust us with your trips - we guarantee quality every step of the way!
+							<br> <br>
+							<strong>We specialize in individual passenger transportation in cars and minibuses. Our
+								priority is comfort, safety and punctuality. We offer stylish black and</strong>
+						</p>
+						<a href="#" class="btn-main about__btn">Book a Trip</a>
+					</div>
+				</div>
+				<div class="about__gallery">
+					<img src="img/about.jpg" alt="image" class="about__img">
+					<img src="img/about-2.jpg" alt="image" class="about__img">
+				</div>
+			</div>
+		</section>
+
+		<section class="schedule">
+			<div class="container schedule__container">
+				<div data-more-show="5" class="schedule__body more">
+					<div class="container _min">
+						<div class="schedule__head">
+							<span class="schedule__online">We are online</span>
+							<span class="schedule__last">Last request 13:10</span>
+						</div>
+						<h2 class="title title-2 schedule__title">Real-time travel schedule for the next 5 days</h2>
+						<p class="schedule__content">
+							Beloew are the reserved dates. You can use transfer on the way back
+						</p>
+						<div class="schedule__table">
+							<div class="schedule__table-body">
+								<div class="schedule__table-head">
+									<div class="schedule__head-item"></div>
+									<div class="schedule__head-item">
+										<svg class="schedule__table-icon">
+											<use xlink:href="img/icons/icons.svg#icon-location"></use>
+										</svg>
+										<span>Departure</span>
+									</div>
+									<div class="schedule__head-item">
+										<svg class="schedule__table-icon">
+											<use xlink:href="img/icons/icons.svg#icon-location"></use>
+										</svg>
+										<span>Destination</span>
+									</div>
+									<div class="schedule__head-item">
+										<svg class="schedule__table-icon">
+											<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+										</svg>
+										<span>Date</span>
+									</div>
+									<div class="schedule__head-item">
+										<svg class="schedule__table-icon">
+											<use xlink:href="img/icons/icons.svg#icon-time"></use>
+										</svg>
+										<span>Free form</span>
+									</div>
+									<div class="schedule__head-item">
+										<svg class="schedule__table-icon">
+											<use xlink:href="img/icons/icons.svg#icon-profile"></use>
+										</svg>
+										<span>Passengers</span>
+									</div>
+									<div class="schedule__head-item">
+										<svg class="schedule__table-icon">
+											<use xlink:href="img/icons/icons.svg#icon-profile"></use>
+										</svg>
+										<span>Cheld seat</span>
+									</div>
+								</div>
+								<div class="schedule__table-row more__item">
+									<div class="schedule__talbe-item">1</div>
+									<div class="schedule__talbe-item">Daugavplis</div>
+									<div class="schedule__talbe-item">Riga</div>
+									<div class="schedule__talbe-item">31.09-01.10.2024</div>
+									<div class="schedule__talbe-item">04:00</div>
+									<div class="schedule__talbe-item">6</div>
+									<div class="schedule__talbe-item">No</div>
+								</div>
+								<div class="schedule__table-row more__item">
+									<div class="schedule__talbe-item">2</div>
+									<div class="schedule__talbe-item">Daugavplis</div>
+									<div class="schedule__talbe-item">Riga</div>
+									<div class="schedule__talbe-item">31.09-01.10.2024</div>
+									<div class="schedule__talbe-item">04:00</div>
+									<div class="schedule__talbe-item">6</div>
+									<div class="schedule__talbe-item">No</div>
+								</div>
+								<div class="schedule__table-row more__item">
+									<div class="schedule__talbe-item">3</div>
+									<div class="schedule__talbe-item">Daugavplis</div>
+									<div class="schedule__talbe-item">Riga</div>
+									<div class="schedule__talbe-item">31.09-01.10.2024</div>
+									<div class="schedule__talbe-item">04:00</div>
+									<div class="schedule__talbe-item">6</div>
+									<div class="schedule__talbe-item">No</div>
+								</div>
+								<div class="schedule__table-row more__item">
+									<div class="schedule__talbe-item">4</div>
+									<div class="schedule__talbe-item">Daugavplis</div>
+									<div class="schedule__talbe-item">Riga</div>
+									<div class="schedule__talbe-item">31.09-01.10.2024</div>
+									<div class="schedule__talbe-item">04:00</div>
+									<div class="schedule__talbe-item">6</div>
+									<div class="schedule__talbe-item">No</div>
+								</div>
+								<div class="schedule__table-row more__item">
+									<div class="schedule__talbe-item">5</div>
+									<div class="schedule__talbe-item">Daugavplis</div>
+									<div class="schedule__talbe-item">Riga</div>
+									<div class="schedule__talbe-item">31.09-01.10.2024</div>
+									<div class="schedule__talbe-item">04:00</div>
+									<div class="schedule__talbe-item">6</div>
+									<div class="schedule__talbe-item">No</div>
+								</div>
+								<div class="schedule__table-row more__item">
+									<div class="schedule__talbe-item">6</div>
+									<div class="schedule__talbe-item">Daugavplis</div>
+									<div class="schedule__talbe-item">Riga</div>
+									<div class="schedule__talbe-item">31.09-01.10.2024</div>
+									<div class="schedule__talbe-item">04:00</div>
+									<div class="schedule__talbe-item">6</div>
+									<div class="schedule__talbe-item">No</div>
+								</div>
+								<div class="schedule__table-row more__item">
+									<div class="schedule__talbe-item">7</div>
+									<div class="schedule__talbe-item">Daugavplis</div>
+									<div class="schedule__talbe-item">Riga</div>
+									<div class="schedule__talbe-item">31.09-01.10.2024</div>
+									<div class="schedule__talbe-item">04:00</div>
+									<div class="schedule__talbe-item">6</div>
+									<div class="schedule__talbe-item">No</div>
+								</div>
+								<div class="schedule__table-row more__item">
+									<div class="schedule__talbe-item">8</div>
+									<div class="schedule__talbe-item">Daugavplis</div>
+									<div class="schedule__talbe-item">Riga</div>
+									<div class="schedule__talbe-item">31.09-01.10.2024</div>
+									<div class="schedule__talbe-item">04:00</div>
+									<div class="schedule__talbe-item">6</div>
+									<div class="schedule__talbe-item">No</div>
+								</div>
+								<div class="schedule__table-row more__item">
+									<div class="schedule__talbe-item">9</div>
+									<div class="schedule__talbe-item">Daugavplis</div>
+									<div class="schedule__talbe-item">Riga</div>
+									<div class="schedule__talbe-item">31.09-01.10.2024</div>
+									<div class="schedule__talbe-item">04:00</div>
+									<div class="schedule__talbe-item">6</div>
+									<div class="schedule__talbe-item">No</div>
+								</div>
+								<div class="schedule__table-row more__item">
+									<div class="schedule__talbe-item">10</div>
+									<div class="schedule__talbe-item">Daugavplis</div>
+									<div class="schedule__talbe-item">Riga</div>
+									<div class="schedule__talbe-item">31.09-01.10.2024</div>
+									<div class="schedule__talbe-item">04:00</div>
+									<div class="schedule__talbe-item">6</div>
+									<div class="schedule__talbe-item">No</div>
+								</div>
+								<div class="schedule__table-row more__item">
+									<div class="schedule__talbe-item">11</div>
+									<div class="schedule__talbe-item">Daugavplis</div>
+									<div class="schedule__talbe-item">Riga</div>
+									<div class="schedule__talbe-item">31.09-01.10.2024</div>
+									<div class="schedule__talbe-item">04:00</div>
+									<div class="schedule__talbe-item">6</div>
+									<div class="schedule__talbe-item">No</div>
+								</div>
+								<div class="schedule__table-row more__item">
+									<div class="schedule__talbe-item">12</div>
+									<div class="schedule__talbe-item">Daugavplis</div>
+									<div class="schedule__talbe-item">Riga</div>
+									<div class="schedule__talbe-item">31.09-01.10.2024</div>
+									<div class="schedule__talbe-item">04:00</div>
+									<div class="schedule__talbe-item">6</div>
+									<div class="schedule__talbe-item">No</div>
+								</div>
+							</div>
+						</div>
+						<button class="btn btn-main _white schedule__btn more__btn">
+							<span>Load more</span>
+							<svg class="schedule__btn-arrow">
+								<use xlink:href='img/icons/icons.svg#icon-arrow'></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="benefits">
+			<div class="container _min">
+				<h2 class="title title-2 benefits__title">Benefits <span>for You</span></h2>
+				<p class="benefits__content">
+					We have figured out how to make your trip faster and more comfortable...
+				</p>
+				<div class="benefits__wrapper">
+					<ul class="list benefits__list">
+						<li class="benefits__item">
+							<img src="img/benefits.svg" alt="icon" class="benefits__icon" />
+							<h5 class="title benefits__item-title">Comfort and convenience</h5>
+							<p class="benefits__item-content">
+								A trip to the airport should be a pleasant experience, and we will make your transfer
+								comfortable
+							</p>
+						</li>
+						<li class="benefits__item">
+							<img src="img/benefits.svg" alt="icon" class="benefits__icon" />
+							<h5 class="title benefits__item-title">Comfort and convenience</h5>
+							<p class="benefits__item-content">
+								A trip to the airport should be a pleasant experience, and we will make your transfer
+								comfortable
+							</p>
+						</li>
+						<li class="benefits__item">
+							<img src="img/benefits.svg" alt="icon" class="benefits__icon" />
+							<h5 class="title benefits__item-title">Comfort and convenience</h5>
+							<p class="benefits__item-content">
+								A trip to the airport should be a pleasant experience, and we will make your transfer
+								comfortable
+							</p>
+						</li>
+						<li class="benefits__item">
+							<img src="img/benefits.svg" alt="icon" class="benefits__icon" />
+							<h5 class="title benefits__item-title">Comfort and convenience</h5>
+							<p class="benefits__item-content">
+								A trip to the airport should be a pleasant experience, and we will make your transfer
+								comfortable
+							</p>
+						</li>
+					</ul>
+					<div class="benefits__gallery">
+						<img src="img/benefits.jpg" alt="image" class="benefits__img">
+						<img src="img/benefits.jpg" alt="image" class="benefits__img">
+						<img src="img/benefits.jpg" alt="image" class="benefits__img">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="success">
+			<div class="container">
+				<div class="success__body" style="background: url(&quot;img/success.jpg&quot;) 0 0 / cover no-repeat">
+					<div class="success__info">
+						<h2 class="title title-2 success__title">Our successes</h2>
+						<p class="success__content">
+							In addition, we constantly update our fleet, deliver the car on time and always
+							communicate with the customer until the car is delivered. We are always open to long-term
+							cooperation on mutually beneficial terms. We will always offer you the best solution
+						</p>
+						<ul class="list success__list">
+							<li class="success__item">
+								<span class="success__number">3608</span>
+								<p class="success__item-content">Satisfied customers</p>
+							</li>
+							<li class="success__item">
+								<span class="success__number">3488</span>
+								<p class="success__item-content">Airport transfers</p>
+							</li>
+							<li class="success__item">
+								<span class="success__number">215</span>
+								<p class="success__item-content">Hotel transfers</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="reviews">
+			<div class="container _min reviews__container">
+				<div class="reviews__head">
+					<div>
+						<h2 class="title title-2 reviews__title">Customer <span>Reviews</span></h2>
+						<p class="reviews__content">
+							Perfect Rating: 5 out of 5 stars on Google based on our customer reviews
+						</p>
+					</div>
+					<a data-da=".reviews__container,743,2" href="#" target="_blank" class="btn-main reviews__btn">Read Google reviews</a>
+				</div>
+				<div class="reviews__body">
+					<div class="reviews__gallery">
+						<img src="img/reviews.jpg" alt="image" class="reviews__img" />
+						<img src="img/reviews.jpg" alt="image" class="reviews__img" />
+						<img src="img/reviews.jpg" alt="image" class="reviews__img" />
+					</div>
+					<div class="reviews__list">
+						<a href="https://www.google.com/maps/reviews/@55.8706896,26.5181885,17z/data=!3m1!4b1!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURkdElmZEVBEAE!2m1!1s0x0:0x2a6ebefdfed9b351?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="reviews__item">
+							<div class="reviews__item-head">
+								<img src="img/avatar.jpg" alt="avatar" class="reviews__item-avatar" />
+								<div class="reviews__item-rating">
+									<svg class="reviews__icon-star">
+										<use xlink:href="img/icons/icons.svg#icon-star"></use>
+									</svg>
+									<span>4.95</span>
+								</div>
+							</div>
+							<h5 class="title reviews__item-title">Nicole Champlin</h5>
+							<p class="reviews__item-content">
+								Vadim and Oleg were very helpful, punctual and friendly drivers. AndreTransfer is
+								efficient, reliable
+							</p>
+						</a>
+						<a href="https://www.google.com/maps/reviews/@55.8706896,26.5181885,17z/data=!3m1!4b1!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURkdElmZEVBEAE!2m1!1s0x0:0x2a6ebefdfed9b351?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="reviews__item">
+							<div class="reviews__item-head">
+								<img src="img/avatar.jpg" alt="avatar" class="reviews__item-avatar" />
+								<div class="reviews__item-rating">
+									<svg class="reviews__icon-star">
+										<use xlink:href="img/icons/icons.svg#icon-star"></use>
+									</svg>
+									<span>4.95</span>
+								</div>
+							</div>
+							<h5 class="title reviews__item-title">Nicole Champlin</h5>
+							<p class="reviews__item-content">
+								Vadim and Oleg were very helpful, punctual and friendly drivers. AndreTransfer is
+								efficient, reliable
+							</p>
+						</a>
+						<a href="https://www.google.com/maps/reviews/@55.8706896,26.5181885,17z/data=!3m1!4b1!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURkdElmZEVBEAE!2m1!1s0x0:0x2a6ebefdfed9b351?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="reviews__item">
+							<div class="reviews__item-head">
+								<img src="img/avatar.jpg" alt="avatar" class="reviews__item-avatar" />
+								<div class="reviews__item-rating">
+									<svg class="reviews__icon-star">
+										<use xlink:href="img/icons/icons.svg#icon-star"></use>
+									</svg>
+									<span>4.95</span>
+								</div>
+							</div>
+							<h5 class="title reviews__item-title">Nicole Champlin</h5>
+							<p class="reviews__item-content">
+								Vadim and Oleg were very helpful, punctual and friendly drivers. AndreTransfer is
+								efficient, reliable
+							</p>
+						</a>
+						<a href="https://www.google.com/maps/reviews/@55.8706896,26.5181885,17z/data=!3m1!4b1!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURkdElmZEVBEAE!2m1!1s0x0:0x2a6ebefdfed9b351?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="reviews__item">
+							<div class="reviews__item-head">
+								<img src="img/avatar.jpg" alt="avatar" class="reviews__item-avatar" />
+								<div class="reviews__item-rating">
+									<svg class="reviews__icon-star">
+										<use xlink:href="img/icons/icons.svg#icon-star"></use>
+									</svg>
+									<span>4.95</span>
+								</div>
+							</div>
+							<h5 class="title reviews__item-title">Nicole Champlin</h5>
+							<p class="reviews__item-content">
+								Vadim and Oleg were very helpful, punctual and friendly drivers. AndreTransfer is
+								efficient, reliable
+							</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="pricing">
+			<div class="container _min">
+				<h2 class="title title-2 pricing__title"><span>Pricing</span></h2>
+				<p class="pricing__content">
+					When placing an order in another direction, the cost of the trip is calculated individually.
+					If you have any questions, please contact us
+				</p>
+				<div class="pricing__wrapper">
+					<div class="pricing__item">
+						<h5 class="title pricing__item-title">Nicole Champlin</h5>
+						<ul class="list pricing__item-list">
+							<li>3:00h on the way</li>
+							<li>4 free places</li>
+							<li>2 coffe break on request</li>
+						</ul>
+						<span class="pricing__item-price">100€ +VAT</span>
+						<a href="#" class="btn-main pricing__item-btn">
+							<span>Book now</span>
+							<svg class="pricing__item-arrow">
+								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="pricing__item">
+						<h5 class="title pricing__item-title">Nicole Champlin</h5>
+						<ul class="list pricing__item-list">
+							<li>3:00h on the way</li>
+							<li>4 free places</li>
+							<li>2 coffe break on request</li>
+						</ul>
+						<span class="pricing__item-price">100€ +VAT</span>
+						<a href="#" class="btn-main pricing__item-btn">
+							<span>Book now</span>
+							<svg class="pricing__item-arrow">
+								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="pricing__item">
+						<h5 class="title pricing__item-title">Nicole Champlin</h5>
+						<ul class="list pricing__item-list">
+							<li>3:00h on the way</li>
+							<li>4 free places</li>
+							<li>2 coffe break on request</li>
+						</ul>
+						<span class="pricing__item-price">100€ +VAT</span>
+						<a href="#" class="btn-main pricing__item-btn">
+							<span>Book now</span>
+							<svg class="pricing__item-arrow">
+								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="pricing__item">
+						<h5 class="title pricing__item-title">Nicole Champlin</h5>
+						<ul class="list pricing__item-list">
+							<li>3:00h on the way</li>
+							<li>4 free places</li>
+							<li>2 coffe break on request</li>
+						</ul>
+						<span class="pricing__item-price">100€ +VAT</span>
+						<a href="#" class="btn-main pricing__item-btn">
+							<span>Book now</span>
+							<svg class="pricing__item-arrow">
+								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="pricing__gallery">
+					<div class="pricing__wrapper-img">
+						<img src="img/prcing.jpg" alt="image" class="pricing__img" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="media-center">
+			<div class="container _min media-center__container">
+				<div class="media-center__head">
+					<h2 class="title title-2">Media <span>center</span></h2>
+					<a data-da=".media-center__container,743,2" href="#" class="btn-main media-center__btn">Go to media Center</a>
+				</div>
+				<div class="media-center__wrapper">
+					<a href="#" class="media-center__item">
+						<img src="img/media-center.jpg" alt="" class="media-center__img" />
+						<h5 class="title media-center__item-title">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+							ut...
+						</h5>
+						<p class="media-center__item-content">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+							ut...
+						</p>
+					</a>
+					<a href="#" class="media-center__item">
+						<img src="img/media-center.jpg" alt="" class="media-center__img" />
+						<h5 class="title media-center__item-title">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+							ut...
+						</h5>
+						<p class="media-center__item-content">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+							ut...
+						</p>
+					</a>
+					<a href="#" class="media-center__item">
+						<img src="img/media-center.jpg" alt="" class="media-center__img" />
+						<h5 class="title media-center__item-title">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+							ut...
+						</h5>
+						<p class="media-center__item-content">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+							ut...
+						</p>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="offer">
+			<div class="container">
+				<div class="offer__body" style="background: url('img/offer.jpg') 0 0 / cover no-repeat;">
+					<div class="offer__info">
+						<h2 class="title title-2 offer__title">Your next transfer with us?</h2>
+						<div class="offer__buttons">
+							<a href="#" class="btn-main _white offer__btn">Book a Trip</a>
+							<a href="#" class="btn-main _white _stroke offer__btn">Contact Us</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	<footer class="footer">
+		<div class="container _min footer__container">
+			<div>
+				<a href="/" class="footer__logo">
+					<img src="img/logo.svg" alt="logo" class="footer__logo-img" />
+				</a>
+				<p class="footer__address">
+					AndreTransfer IK. Reg Nr 41502039438 Daugavpils, Ģimnāzijas iela 34/36 - 16
+				</p>
+			</div>
+			<nav class="footer__nav">
+				<ul class="list footer__list">
+					<li>
+						<a href="#">About us</a>
+					</li>
+					<li>
+						<a href="#">Live Schedule</a>
+					</li>
+					<li>
+						<a href="#">Benefits</a>
+					</li>
+					<li>
+						<a href="#">Successes</a>
+					</li>
+				</ul>
+				<ul class="list footer__list">
+					<li>
+						<a href="#">Reviews</a>
+					</li>
+					<li>
+						<a href="#">Price</a>
+					</li>
+					<li>
+						<a href="#">Contact us</a>
+					</li>
+				</ul>
+			</nav>
+			<ul class="list footer__social">
+				<li>
+					<a href="#" class="footer__social-btn">
+						<svg class="footer__social-icon">
+							<use xlink:href="img/icons/icons.svg#icon-inst"></use>
+						</svg>
+						<span>AndreTransfer </span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="footer__social-btn">
+						<svg class="footer__social-icon">
+							<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+						</svg>
+						<span>AndreTransfer</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="footer__social-btn">
+						<svg class="footer__social-icon">
+							<use xlink:href="img/icons/icons.svg#icon-fc"></use>
+						</svg>
+						<span>AndreTransfer</span>
+					</a>
+				</li>
+				<li>
+					<a href="mailto:info@andretransfer.lv" class="footer__social-btn">
+						<svg class="footer__social-icon">
+							<use xlink:href="img/icons/icons.svg#icon-mail"></use>
+						</svg>
+						<span>info@andretransfer.lv</span>
+					</a>
+				</li>
+				<li>
+					<a href="tel:+37126074631" class="footer__social-btn">
+						<svg class="footer__social-icon">
+							<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+						</svg>
+						<span>+371 26074631</span>
+					</a>
+				</li>
+			</ul>
+			<img src="img/footer.jpg" alt="image" class="footer__img">
+		</div>
+	</footer>
+
+	<script src="js/app.min.js?_v=20241108031028"></script>
+</body>
+
+</html>

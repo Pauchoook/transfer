@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>pauchoo0k</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241108031028">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="body">
+	<header class="header _black">
+		<div class="container header__container">
+			<a href="/" class="header__logo">
+				<img src="img/logo.svg" alt="logo" class="header__logo-img" />
+			</a>
+			<nav class="header__nav" id="burger">
+				<ul class="list header__list">
+					<li>
+						<a href="#">Live Schedule</a>
+					</li>
+					<li>
+						<a href="#">Benefits</a>
+					</li>
+					<li>
+						<a href="#">Successes</a>
+					</li>
+					<li>
+						<a href="#">Reviews</a>
+					</li>
+					<li>
+						<a href="#">Price</a>
+					</li>
+					<li>
+						<a href="#">Contact us</a>
+					</li>
+				</ul>
+				<div class="dropdown header__dropdown">
+					<button class="btn dropdown__btn header__dropdown-btn">EN</button>
+					<div class="dropdown__item">
+						<a href="#" class="header__lang-btn">RU</a>
+						<a href="#" class="header__lang-btn">RU</a>
+					</div>
+				</div>
+			</nav>
+			<ul class="list header__social">
+				<li>
+					<a href="#" target="_blank" class="header__social-btn">
+						<svg class="header__social-icon">
+							<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="tel:+7 546 456 456" target="_blank" class="header__social-btn">
+						<svg class="header__social-icon">
+							<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+			<a href="tel:+7 546 456 456" class="header__tel">+7 546 456 456</a>
+			<button class="btn header__burger-btn" id="btn-burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</header>
+
+	<main>
+
+		<section class="reserv">
+			<div class="container _min">
+				<ul class="list breadcrumbs">
+					<li>
+						<a href="/">Home</a>
+					</li>
+					<li>reservation</li>
+				</ul>
+				<h1 class="title title-2 reserv__title">Reservation page</h1>
+				<form class="reserv__form form">
+					<div class="reserv__sidebar one-route">
+						<div class="reserv__menu form__wrapper">
+							<div class="form__head">
+								<svg class="form__head-icon">
+									<use xlink:href="img/icons/icons.svg#icon-flag"></use>
+								</svg>
+								<span class="form__head-title">Direction</span>
+								<div class="form__head-line"></div>
+							</div>
+							<div class="reserv__sidebar-nav">
+								<input type="radio" name="side" id="two-side" class="form__input-check" />
+								<label for="two-side" class="form__label-check">туда и обратно</label>
+								<input type="radio" name="side" id="one-side" class="form__input-check" checked />
+								<label for="one-side" class="form__label-check">в одну сторону</label>
+							</div>
+						</div>
+						<div class="reserv__sidebar-body form__wrapper">
+							<div class="form__head">
+								<svg class="form__head-icon">
+									<use xlink:href="img/icons/icons.svg#icon-flag"></use>
+								</svg>
+								<span class="form__head-title">Direction</span>
+								<div class="form__head-line"></div>
+							</div>
+							<div class="reserv__sidebar-item">
+								<span class="form__item-title">Из</span>
+								<div class="select">
+									<div class="btn select__btn">
+										<input type="text" class="select__input" placeholder="Откуда" />
+										<svg class="select__arrow">
+											<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+										</svg>
+									</div>
+									<div class="select__item">
+										<span class="select__item-btn">Depature</span>
+										<span class="select__item-btn">New York</span>
+										<span class="select__item-btn">Gothem</span>
+										<span class="select__item-btn">City</span>
+										<span class="select__item-btn">Depature</span>
+										<span class="select__item-btn">New York</span>
+										<span class="select__item-btn">Gothem</span>
+										<span class="select__item-btn">City</span>
+										<span class="select__item-btn">City</span>
+										<span class="select__item-btn select__btn-other">другое(ввести самому)</span>
+									</div>
+								</div>
+							</div>
+							<div class="reserv__sidebar-item">
+								<span class="form__item-title">До</span>
+								<div class="select">
+									<div class="btn select__btn">
+										<input type="text" class="select__input" placeholder="Куда" />
+										<svg class="select__arrow">
+											<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+										</svg>
+									</div>
+									<div class="select__item">
+										<span class="select__item-btn">Depature</span>
+										<span class="select__item-btn">New York</span>
+										<span class="select__item-btn">Gothem</span>
+										<span class="select__item-btn">City</span>
+										<span class="select__item-btn">Depature</span>
+										<span class="select__item-btn">New York</span>
+										<span class="select__item-btn">Gothem</span>
+										<span class="select__item-btn">City</span>
+										<span class="select__item-btn">City</span>
+										<span class="select__item-btn select__btn-other">другое(ввести самому)</span>
+									</div>
+								</div>
+							</div>
+							<div class="reserv__sidebar-item">
+								<span class="form__item-title">Дата</span>
+								<div class="select-input">
+									<input type="date" class="select-input__input input-date" />
+									<div class="select-input__title form__input"></div>
+								</div>
+							</div>
+							<div class="reserv__sidebar-item">
+								<span class="form__item-title">Время вылета</span>
+								<div class="select-input">
+									<input type="time" class="select-input__input input-time" />
+									<div class="select-input__title form__input"></div>
+								</div>
+							</div>
+							<div class="reserv__sidebar-item">
+								<span class="form__item-title">Адрес где забрать</span>
+								<input type="text" placeholder="Адрес..." class="form__input" />
+							</div>
+							<div class="reserv__sidebar-item">
+								<span class="form__item-title">Номер рейса</span>
+								<input type="text" placeholder="FR1964, BT1454..." class="form__input" />
+							</div>
+							<img src="img/form.jpg" alt="image" class="reserv__sidebar-img" />
+						</div>
+						<div class="reserv__sidebar-body form__wrapper">
+							<div class="form__head">
+								<svg class="form__head-icon">
+									<use xlink:href="img/icons/icons.svg#icon-line-location"></use>
+								</svg>
+								<span class="form__head-title">Return route</span>
+								<div class="form__head-line"></div>
+							</div>
+							<div class="reserv__sidebar-item">
+								<span class="form__item-title">Из</span>
+								<div class="select">
+									<div class="btn select__btn">
+										<input type="text" class="select__input" placeholder="Откуда" />
+										<svg class="select__arrow">
+											<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+										</svg>
+									</div>
+									<div class="select__item">
+										<span class="select__item-btn">Depature</span>
+										<span class="select__item-btn">New York</span>
+										<span class="select__item-btn">Gothem</span>
+										<span class="select__item-btn">City</span>
+										<span class="select__item-btn">Depature</span>
+										<span class="select__item-btn">New York</span>
+										<span class="select__item-btn">Gothem</span>
+										<span class="select__item-btn">City</span>
+										<span class="select__item-btn">City</span>
+										<span class="select__item-btn select__btn-other">другое(ввести самому)</span>
+									</div>
+								</div>
+							</div>
+							<div class="reserv__sidebar-item">
+								<span class="form__item-title">До</span>
+								<div class="select">
+									<div class="btn select__btn">
+										<input type="text" class="select__input" placeholder="Куда" />
+										<svg class="select__arrow">
+											<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+										</svg>
+									</div>
+									<div class="select__item">
+										<span class="select__item-btn">Depature</span>
+										<span class="select__item-btn">New York</span>
+										<span class="select__item-btn">Gothem</span>
+										<span class="select__item-btn">City</span>
+										<span class="select__item-btn">Depature</span>
+										<span class="select__item-btn">New York</span>
+										<span class="select__item-btn">Gothem</span>
+										<span class="select__item-btn">City</span>
+										<span class="select__item-btn">City</span>
+										<span class="select__item-btn select__btn-other">другое(ввести самому)</span>
+									</div>
+								</div>
+							</div>
+							<div class="reserv__sidebar-item">
+								<span class="form__item-title">Дата</span>
+								<div class="select-input">
+									<input type="date" class="select-input__input input-date" />
+									<div class="select-input__title form__input"></div>
+								</div>
+							</div>
+							<div class="reserv__sidebar-item">
+								<span class="form__item-title">Время вылета</span>
+								<div class="select-input">
+									<input type="time" class="select-input__input input-time" />
+									<div class="select-input__title form__input"></div>
+								</div>
+							</div>
+							<div class="reserv__sidebar-item">
+								<span class="form__item-title">Адрес где забрать</span>
+								<input type="text" placeholder="Адрес..." class="form__input" />
+							</div>
+							<div class="reserv__sidebar-item">
+								<span class="form__item-title">Номер рейса</span>
+								<input type="text" placeholder="FR1964, BT1454..." class="form__input" />
+							</div>
+							<img src="img/form.jpg" alt="image" class="reserv__sidebar-img" />
+						</div>
+					</div>
+					<div class="reserv__form-body form__wrapper">
+						<div class="form__head">
+							<svg class="form__head-icon">
+								<use xlink:href="img/icons/icons.svg#icon-people"></use>
+							</svg>
+							<span class="form__head-title">Number of passengers</span>
+							<div class="form__head-line"></div>
+						</div>
+						<div class="form__row">
+							<div class="form__row-item">
+								<span class="form__item-title">Adults</span>
+								<input type="number" placeholder="0" class="form__input" />
+							</div>
+							<div class="form__row-item">
+								<span class="form__item-title">Children under 12 years old</span>
+								<input type="number" placeholder="0" class="form__input" />
+							</div>
+						</div>
+						<div class="form__head">
+							<svg class="form__head-icon">
+								<use xlink:href="img/icons/icons.svg#icon-portfel"></use>
+							</svg>
+							<span class="form__head-title">Укажите кол-во ед. багажа</span>
+							<div class="form__head-line"></div>
+						</div>
+						<div class="form__row">
+							<div class="form__row-item">
+								<span class="form__item-title">Ручная кладь <br />
+									(беру с собой в салон < 10 кг)</span>
+										<input type="number" placeholder="0" class="form__input" />
+							</div>
+							<div class="form__row-item">
+								<span class="form__item-title">Багаж ( >10 кг )(буду сдавать)</span>
+								<input type="number" placeholder="0" class="form__input" />
+							</div>
+							<div class="form__row-item">
+								<span class="form__item-title">Детская коляска</span>
+								<input type="number" placeholder="0" class="form__input" />
+							</div>
+						</div>
+						<div class="form__head">
+							<svg class="form__head-icon">
+								<use xlink:href="img/icons/icons.svg#icon-profile"></use>
+							</svg>
+							<span class="form__head-title">Contact information</span>
+							<div class="form__head-line"></div>
+						</div>
+						<div class="form__row">
+							<div class="form__row-item _half">
+								<span class="form__item-title">Имя пассажира*</span>
+								<input type="text" placeholder="Николай" class="form__input" />
+							</div>
+							<div class="form__row-item _half">
+								<span class="form__item-title">Эл-почта*</span>
+								<input type="text" placeholder="mail@mail.ru" class="form__input" />
+							</div>
+							<div class="form__row-item _half">
+								<span class="form__item-title">Телефон*</span>
+								<input type="tel" placeholder="+7-999-999-9999" class="form__input" />
+							</div>
+						</div>
+						<div class="form__head">
+							<svg class="form__head-icon">
+								<use xlink:href="img/icons/icons.svg#icon-profile"></use>
+							</svg>
+							<span class="form__head-title">Дополнительно</span>
+							<div class="form__head-line"></div>
+						</div>
+						<div class="form__row">
+							<div class="form__row-item _full">
+								<textarea type="text" placeholder="Количетво багажа, детское кресло, коляска и тд" class="form__input _textarea"></textarea>
+							</div>
+						</div>
+						<button class="btn btn-main _white form__btn">
+							<span>Reserve</span>
+							<svg class="form__btn-arrow">
+								<use xlink:href='img/icons/icons.svg#icon-arrow'></use>
+							</svg>
+						</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<section class="offer">
+			<div class="container">
+				<div class="offer__body" style="background: url('img/offer.jpg') 0 0 / cover no-repeat;">
+					<div class="offer__info">
+						<h2 class="title title-2 offer__title">Your next transfer with us?</h2>
+						<div class="offer__buttons">
+							<a href="#" class="btn-main _white offer__btn">Book a Trip</a>
+							<a href="#" class="btn-main _white _stroke offer__btn">Contact Us</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	<footer class="footer">
+		<div class="container _min footer__container">
+			<div>
+				<a href="/" class="footer__logo">
+					<img src="img/logo.svg" alt="logo" class="footer__logo-img" />
+				</a>
+				<p class="footer__address">
+					AndreTransfer IK. Reg Nr 41502039438 Daugavpils, Ģimnāzijas iela 34/36 - 16
+				</p>
+			</div>
+			<nav class="footer__nav">
+				<ul class="list footer__list">
+					<li>
+						<a href="#">About us</a>
+					</li>
+					<li>
+						<a href="#">Live Schedule</a>
+					</li>
+					<li>
+						<a href="#">Benefits</a>
+					</li>
+					<li>
+						<a href="#">Successes</a>
+					</li>
+				</ul>
+				<ul class="list footer__list">
+					<li>
+						<a href="#">Reviews</a>
+					</li>
+					<li>
+						<a href="#">Price</a>
+					</li>
+					<li>
+						<a href="#">Contact us</a>
+					</li>
+				</ul>
+			</nav>
+			<ul class="list footer__social">
+				<li>
+					<a href="#" class="footer__social-btn">
+						<svg class="footer__social-icon">
+							<use xlink:href="img/icons/icons.svg#icon-inst"></use>
+						</svg>
+						<span>AndreTransfer </span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="footer__social-btn">
+						<svg class="footer__social-icon">
+							<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+						</svg>
+						<span>AndreTransfer</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="footer__social-btn">
+						<svg class="footer__social-icon">
+							<use xlink:href="img/icons/icons.svg#icon-fc"></use>
+						</svg>
+						<span>AndreTransfer</span>
+					</a>
+				</li>
+				<li>
+					<a href="mailto:info@andretransfer.lv" class="footer__social-btn">
+						<svg class="footer__social-icon">
+							<use xlink:href="img/icons/icons.svg#icon-mail"></use>
+						</svg>
+						<span>info@andretransfer.lv</span>
+					</a>
+				</li>
+				<li>
+					<a href="tel:+37126074631" class="footer__social-btn">
+						<svg class="footer__social-icon">
+							<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+						</svg>
+						<span>+371 26074631</span>
+					</a>
+				</li>
+			</ul>
+			<img src="img/footer.jpg" alt="image" class="footer__img">
+		</div>
+	</footer>
+
+	<script src="js/app.min.js?_v=20241108031028"></script>
+</body>
+
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>pauchoo0k</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241108031028">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="body">
+	<header class="header _black">
+		<div class="container header__container">
+			<a href="/" class="header__logo">
+				<img src="img/logo.svg" alt="logo" class="header__logo-img" />
+			</a>
+			<nav class="header__nav" id="burger">
+				<ul class="list header__list">
+					<li>
+						<a href="#">Live Schedule</a>
+					</li>
+					<li>
+						<a href="#">Benefits</a>
+					</li>
+					<li>
+						<a href="#">Successes</a>
+					</li>
+					<li>
+						<a href="#">Reviews</a>
+					</li>
+					<li>
+						<a href="#">Price</a>
+					</li>
+					<li>
+						<a href="#">Contact us</a>
+					</li>
+				</ul>
+				<div class="dropdown header__dropdown">
+					<button class="btn dropdown__btn header__dropdown-btn">EN</button>
+					<div class="dropdown__item">
+						<a href="#" class="header__lang-btn">RU</a>
+						<a href="#" class="header__lang-btn">RU</a>
+					</div>
+				</div>
+			</nav>
+			<ul class="list header__social">
+				<li>
+					<a href="#" target="_blank" class="header__social-btn">
+						<svg class="header__social-icon">
+							<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="tel:+7 546 456 456" target="_blank" class="header__social-btn">
+						<svg class="header__social-icon">
+							<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+			<a href="tel:+7 546 456 456" class="header__tel">+7 546 456 456</a>
+			<button class="btn header__burger-btn" id="btn-burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</header>
+
+	<main>
+
+		<section class="contact">
+			<div class="container _min">
+				<ul class="list breadcrumbs">
+					<li>
+						<a href="/">Home</a>
+					</li>
+					<li>Contact Us</li>
+				</ul>
+				<h1 class="title title-2 contact__title">Contact us</h1>
+				<div class="contact__body">
+					<form action="#" class="contact__form form__wrapper">
+						<div class="form__head">
+							<svg class="form__head-icon">
+								<use xlink:href="img/icons/icons.svg#icon-list"></use>
+							</svg>
+							<span class="form__head-title">Fill the form</span>
+							<div class="form__head-line"></div>
+						</div>
+						<div class="form__row">
+							<div class="form__row-item">
+								<span class="form__item-title">Name, surname</span>
+								<input type="text" placeholder="Николай" class="form__input" />
+							</div>
+							<div class="form__row-item">
+								<span class="form__item-title">Email</span>
+								<input type="email" placeholder="mail@mail.ru" class="form__input" />
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__row-item">
+								<span class="form__item-title">Phone number</span>
+								<input type="tel" placeholder="+7-999-999-9999" class="form__input" />
+							</div>
+							<div class="form__wrapper-row-item">
+								<div class="form__row-item">
+									<span class="form__item-title">Дата</span>
+									<div class="select-input">
+										<input type="date" class="select-input__input input-date" />
+										<div class="select-input__title form__input"></div>
+									</div>
+								</div>
+								<div class="form__row-item">
+									<span class="form__item-title">Время</span>
+									<div class="select-input">
+										<input type="time" class="select-input__input input-time" />
+										<div class="select-input__title form__input"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__row-item">
+								<span class="form__item-title">Pick up address</span>
+								<input type="text" placeholder="address" class="form__input" />
+							</div>
+							<div class="form__row-item">
+								<span class="form__item-title">Drop off address</span>
+								<input type="text" placeholder="address" class="form__input" />
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__row-item">
+								<span class="form__item-title">Transport</span>
+								<input type="text" placeholder="Transport..." class="form__input" />
+							</div>
+							<div class="form__wrapper-row-item">
+								<div class="form__row-item">
+									<span class="form__item-title">Adults</span>
+									<input type="number" placeholder="0" class="form__input" />
+								</div>
+								<div class="form__row-item">
+									<span class="form__item-title">Children</span>
+									<input type="number" placeholder="0" class="form__input" />
+								</div>
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__wrapper-row-item">
+								<div class="form__row-item">
+									<span class="form__item-title">Meeting sign</span>
+									<input type="text" placeholder="Meeting sign..." class="form__input" />
+								</div>
+								<div class="form__row-item">
+									<span class="form__item-title">Flight number</span>
+									<input type="text" placeholder="FR1964..." class="form__input" />
+								</div>
+							</div>
+							<div class="form__row-item">
+								<span class="form__item-title">Way of payment</span>
+								<input type="text" placeholder="Card..." class="form__input" />
+							</div>
+						</div>
+						<div class="form__head">
+							<svg class="form__head-icon">
+								<use xlink:href="img/icons/icons.svg#icon-profile"></use>
+							</svg>
+							<span class="form__head-title">Message</span>
+							<div class="form__head-line"></div>
+						</div>
+						<div class="form__row">
+							<div class="form__row-item _full">
+								<textarea type="text" placeholder="Количетво багажа, детское кресло, коляска и тд" class="form__input _textarea"></textarea>
+							</div>
+						</div>
+						<button class="btn btn-main _white form__btn">
+							<span>Reserve</span>
+							<svg class="form__btn-arrow">
+								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+							</svg>
+						</button>
+					</form>
+					<div class="contact__info">
+						<div class="contact__info-body">
+							<div class="contact__head">
+								<h5 class="contact__head-title">Office</h5>
+								<div class="contact__head-line"></div>
+							</div>
+							<div class="contact__item">
+								<p class="contact__content">Budiniškių ave 6, Vilnius, LT-05275 Lithuania</p>
+							</div>
+							<div class="contact__item">
+								<h5 class="contact__item-title">RigaTransfer.eu</h5>
+								<p class="contact__item-subcontent">
+									Service provider: <br />
+									Joint-Stock company „EVITRA LT“, UAB <br />
+									Company code: 302617964 VAT <br />
+									payer code: LT100006911614 <br />
+									Passenger transportation EU licence: LIC-005148-EBKL
+								</p>
+							</div>
+							<div class="contact__item">
+								<h5 class="contact__item-title">Bank account:</h5>
+								<p class="contact__item-subcontent">
+									IBAN: LT944010042403974813 <br />
+									AB Luminor Bank <br />
+									SWIFT: AGBLLT2X <br />
+									Bank code: 40100
+								</p>
+							</div>
+							<div class="contact__item">
+								<h5 class="contact__item-title">Paypal</h5>
+								<p class="contact__item-subcontent">transportas (@) evitra.lt</p>
+							</div>
+						</div>
+						<div class="contact__info-body">
+							<div class="contact__head">
+								<svg class="contact__head-icon">
+									<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+								</svg>
+								<h5 class="contact__head-title">Need help?</h5>
+								<div class="contact__head-line"></div>
+							</div>
+							<div class="contact__item">
+								<div class="contact__telephones">
+									<a href="tel:+370 645 45 124" class="contact__tel">+370 645 45 124</a>
+									<a href="tel:+370 645 45 124" class="contact__tel">+370 645 45 124</a>
+								</div>
+								<ul class="list contact__social">
+									<li>
+										<a href="#" target="_blank" class="contact__social-btn">
+											<svg class="contact__social-icon">
+												<use xlink:href="img/icons/icons.svg#icon-inst"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank" class="contact__social-btn">
+											<svg class="contact__social-icon">
+												<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank" class="contact__social-btn">
+											<svg class="contact__social-icon">
+												<use xlink:href="img/icons/icons.svg#icon-fc"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank" class="contact__social-btn">
+											<svg class="contact__social-icon">
+												<use xlink:href="img/icons/icons.svg#icon-mail"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<a href="mailto:transportas (@) evitra.lt" class="contact__mail">transportas (@) evitra.lt</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="offer">
+			<div class="container">
+				<div class="offer__body" style="background: url('img/offer.jpg') 0 0 / cover no-repeat;">
+					<div class="offer__info">
+						<h2 class="title title-2 offer__title">Your next transfer with us?</h2>
+						<div class="offer__buttons">
+							<a href="#" class="btn-main _white offer__btn">Book a Trip</a>
+							<a href="#" class="btn-main _white _stroke offer__btn">Contact Us</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	<footer class="footer">
+		<div class="container _min footer__container">
+			<div>
+				<a href="/" class="footer__logo">
+					<img src="img/logo.svg" alt="logo" class="footer__logo-img" />
+				</a>
+				<p class="footer__address">
+					AndreTransfer IK. Reg Nr 41502039438 Daugavpils, Ģimnāzijas iela 34/36 - 16
+				</p>
+			</div>
+			<nav class="footer__nav">
+				<ul class="list footer__list">
+					<li>
+						<a href="#">About us</a>
+					</li>
+					<li>
+						<a href="#">Live Schedule</a>
+					</li>
+					<li>
+						<a href="#">Benefits</a>
+					</li>
+					<li>
+						<a href="#">Successes</a>
+					</li>
+				</ul>
+				<ul class="list footer__list">
+					<li>
+						<a href="#">Reviews</a>
+					</li>
+					<li>
+						<a href="#">Price</a>
+					</li>
+					<li>
+						<a href="#">Contact us</a>
+					</li>
+				</ul>
+			</nav>
+			<ul class="list footer__social">
+				<li>
+					<a href="#" class="footer__social-btn">
+						<svg class="footer__social-icon">
+							<use xlink:href="img/icons/icons.svg#icon-inst"></use>
+						</svg>
+						<span>AndreTransfer </span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="footer__social-btn">
+						<svg class="footer__social-icon">
+							<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+						</svg>
+						<span>AndreTransfer</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="footer__social-btn">
+						<svg class="footer__social-icon">
+							<use xlink:href="img/icons/icons.svg#icon-fc"></use>
+						</svg>
+						<span>AndreTransfer</span>
+					</a>
+				</li>
+				<li>
+					<a href="mailto:info@andretransfer.lv" class="footer__social-btn">
+						<svg class="footer__social-icon">
+							<use xlink:href="img/icons/icons.svg#icon-mail"></use>
+						</svg>
+						<span>info@andretransfer.lv</span>
+					</a>
+				</li>
+				<li>
+					<a href="tel:+37126074631" class="footer__social-btn">
+						<svg class="footer__social-icon">
+							<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+						</svg>
+						<span>+371 26074631</span>
+					</a>
+				</li>
+			</ul>
+			<img src="img/footer.jpg" alt="image" class="footer__img">
+		</div>
+	</footer>
+
+	<script src="js/app.min.js?_v=20241108031028"></script>
+</body>
+
+</html>
