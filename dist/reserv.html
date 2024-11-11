@@ -6,12 +6,12 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="css/style.min.css?_v=20241108115916">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241111151229">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body class="body">
-	<header class="header _black">
+	<header class="header">
 		<div class="container header__container">
 			<a href="/" class="header__logo">
 				<img src="img/logo.svg" alt="logo" class="header__logo-img" />
@@ -81,7 +81,7 @@
 					<li>reservation</li>
 				</ul>
 				<h1 class="title title-2 reserv__title">Reservation page</h1>
-				<form class="reserv__form form">
+				<form class="reserv__form form" id="form-reserv">
 					<div class="reserv__sidebar one-route">
 						<div class="reserv__menu form__wrapper">
 							<div class="form__head">
@@ -110,7 +110,7 @@
 								<span class="form__item-title">Из</span>
 								<div class="select">
 									<div class="btn select__btn">
-										<input type="text" class="select__input" placeholder="Откуда" />
+										<input type="text" class="select__input" placeholder="Откуда" id="reserv-depature" />
 										<svg class="select__arrow">
 											<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 										</svg>
@@ -133,7 +133,7 @@
 								<span class="form__item-title">До</span>
 								<div class="select">
 									<div class="btn select__btn">
-										<input type="text" class="select__input" placeholder="Куда" />
+										<input type="text" class="select__input" placeholder="Куда" id="reserv-destination" />
 										<svg class="select__arrow">
 											<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 										</svg>
@@ -153,16 +153,37 @@
 								</div>
 							</div>
 							<div class="reserv__sidebar-item">
+								<span class="form__item-title">Passengers</span>
+								<div class="select">
+									<div class="btn select__btn">
+										<input type="text" class="select__input" placeholder="1-8" id="reserv-passengers" />
+										<svg class="select__arrow">
+											<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+										</svg>
+									</div>
+									<div class="select__item">
+										<span class="select__item-btn">1-8</span>
+										<span class="select__item-btn">2-8</span>
+										<span class="select__item-btn">3-8</span>
+										<span class="select__item-btn">4-8</span>
+										<span class="select__item-btn">5-8</span>
+										<span class="select__item-btn">6-8</span>
+										<span class="select__item-btn">7-8</span>
+										<span class="select__item-btn">8-8</span>
+									</div>
+								</div>
+							</div>
+							<div class="reserv__sidebar-item">
 								<span class="form__item-title">Дата</span>
 								<div class="select-input">
-									<input type="date" class="select-input__input input-date" />
+									<input type="date" class="select-input__input input-date" id="reserv-date" />
 									<div class="select-input__title form__input"></div>
 								</div>
 							</div>
 							<div class="reserv__sidebar-item">
 								<span class="form__item-title">Время вылета</span>
 								<div class="select-input">
-									<input type="time" class="select-input__input input-time" />
+									<input type="time" class="select-input__input input-time" id="reserv-time" />
 									<div class="select-input__title form__input"></div>
 								</div>
 							</div>
@@ -172,7 +193,7 @@
 							</div>
 							<div class="reserv__sidebar-item">
 								<span class="form__item-title">Номер рейса</span>
-								<input type="text" placeholder="FR1964, BT1454..." class="form__input" />
+								<input type="text" placeholder="FR1964, BT1454..." class="form__input" id="reserv-flight-number" />
 							</div>
 							<img src="img/form.jpg" alt="image" class="reserv__sidebar-img" />
 						</div>
@@ -227,6 +248,27 @@
 										<span class="select__item-btn">City</span>
 										<span class="select__item-btn">City</span>
 										<span class="select__item-btn select__btn-other">другое(ввести самому)</span>
+									</div>
+								</div>
+							</div>
+							<div class="reserv__sidebar-item">
+								<span class="form__item-title">Passengers</span>
+								<div class="select">
+									<div class="btn select__btn">
+										<input type="text" class="select__input" placeholder="1-8" />
+										<svg class="select__arrow">
+											<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+										</svg>
+									</div>
+									<div class="select__item">
+										<span class="select__item-btn">1-8</span>
+										<span class="select__item-btn">2-8</span>
+										<span class="select__item-btn">3-8</span>
+										<span class="select__item-btn">4-8</span>
+										<span class="select__item-btn">5-8</span>
+										<span class="select__item-btn">6-8</span>
+										<span class="select__item-btn">7-8</span>
+										<span class="select__item-btn">8-8</span>
 									</div>
 								</div>
 							</div>
@@ -438,7 +480,7 @@
 		</div>
 	</footer>
 
-	<script src="js/app.min.js?_v=20241108115916"></script>
+	<script src="js/app.min.js?_v=20241111151229"></script>
 </body>
 
 </html>

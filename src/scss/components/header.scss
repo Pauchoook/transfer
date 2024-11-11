@@ -5,11 +5,8 @@
   left: 0;
   right: 0;
   color: white;
+  background-color: var(--black);
   z-index: 100;
-  transition: background-color 0.2s ease;
-  &._black {
-    background-color: var(--black);
-  }
   @include tablet {
     padding: 20px 0px;
   }

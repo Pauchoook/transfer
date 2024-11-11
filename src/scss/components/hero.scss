@@ -6,31 +6,39 @@
   min-height: 100vh;
   padding: 24px 0px;
   color: white;
+  margin-top: 96px;
   z-index: 1;
+  @include laptop {
+    margin-top: 85px;
+  }
   @include tablet {
     padding: 0;
     min-height: 930px;
+    margin-top: 138px;
   }
   &::before {
     position: absolute;
     content: "";
     inset: 0;
     background-color: black;
-    opacity: 0.3;
+    opacity: 0.5;
     z-index: -1;
   }
-  &__img {
-    position: absolute;
-    display: block;
+  &__slider {
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
     top: 0;
-    right: 0;
+    left: 0;
+    z-index: -2 !important;
+    @include tablet {
+      height: calc(100% - 403px);
+    }
+  }
+  &__slide-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -2;
-    @include tablet {
-      height: calc(100% - 400px);
-    }
   }
   &__title {
     margin-bottom: 16px;

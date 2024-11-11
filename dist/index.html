@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="css/style.min.css?_v=20241108115916">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241111151229">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -70,10 +70,26 @@
 		</div>
 	</header>
 
+	<a href="#" class="g-reviews active">
+		<img src="img/google.svg" alt="google" class="g-reviews__icon">
+		<span class="g-reviews__title">reviews</span>
+	</a>
 	<main>
 
 		<section class="hero">
-			<img src="img/hero.jpg" alt="image" class="hero__img">
+			<div class="swiper hero__slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="img/hero.jpg" alt="image" class="hero__slide-img" />
+					</div>
+					<div class="swiper-slide">
+						<img src="img/hero.jpg" alt="image" class="hero__slide-img" />
+					</div>
+					<div class="swiper-slide">
+						<img src="img/hero.jpg" alt="image" class="hero__slide-img" />
+					</div>
+				</div>
+			</div>
 			<div class="container">
 				<h1 class="title title-2 hero__title">Individual and affordable airport transfer</h1>
 				<div data-da=".hero, 743, 2" class="hero__body">
@@ -84,7 +100,7 @@
 								<svg class="select__icon">
 									<use xlink:href="img/icons/icons.svg#icon-location"></use>
 								</svg>
-								<input type="text" class="select__input" placeholder="Daugavpils" id="depature" />
+								<input type="text" class="select__input" placeholder="Daugavpils" id="reserv-depature" />
 								<svg class="select__arrow">
 									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 								</svg>
@@ -98,6 +114,7 @@
 								<span class="select__item-btn">New York</span>
 								<span class="select__item-btn">Gothem</span>
 								<span class="select__item-btn">City</span>
+								<span class="select__item-btn select__btn-other">другое(ввести самому)</span>
 							</div>
 						</div>
 					</div>
@@ -108,7 +125,7 @@
 								<svg class="select__icon">
 									<use xlink:href="img/icons/icons.svg#icon-location"></use>
 								</svg>
-								<input type="text" class="select__input" placeholder="Destination" id="destination" />
+								<input type="text" class="select__input" placeholder="Destination" id="reserv-destination" />
 								<svg class="select__arrow">
 									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 								</svg>
@@ -122,6 +139,7 @@
 								<span class="select__item-btn">New York</span>
 								<span class="select__item-btn">Gothem</span>
 								<span class="select__item-btn">City</span>
+								<span class="select__item-btn select__btn-other">другое(ввести самому)</span>
 							</div>
 						</div>
 					</div>
@@ -129,12 +147,12 @@
 						<h5 class="title hero__item-title">Pick Up Date</h5>
 						<div class="select-input hero__input-wrapper">
 							<svg class="hero__input-icon">
-								<use xlink:href='img/icons/icons.svg#icon-calendar'></use>
+								<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
 							</svg>
 							<span class="hero__input-title select-input__title">16.11.2024</span>
-							<input type="date" class="select-input__input input-date">
+							<input type="date" class="select-input__input input-date" id="reserv-date" />
 							<svg class="hero__input-arrow">
-								<use xlink:href='img/icons/icons.svg#icon-arrow'></use>
+								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 							</svg>
 						</div>
 					</div>
@@ -142,12 +160,12 @@
 						<h5 class="title hero__item-title">Pick Up Time</h5>
 						<div class="select-input hero__input-wrapper">
 							<svg class="hero__input-icon">
-								<use xlink:href='img/icons/icons.svg#icon-time'></use>
+								<use xlink:href="img/icons/icons.svg#icon-time"></use>
 							</svg>
 							<span class="hero__input-title select-input__title">19:47</span>
-							<input type="time" class="select-input__input input-time">
+							<input type="time" class="select-input__input input-time" id="reserv-time" />
 							<svg class="hero__input-arrow">
-								<use xlink:href='img/icons/icons.svg#icon-arrow'></use>
+								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 							</svg>
 						</div>
 					</div>
@@ -158,7 +176,7 @@
 								<svg class="select__icon">
 									<use xlink:href="img/icons/icons.svg#icon-profile"></use>
 								</svg>
-								<input type="text" class="select__input" placeholder="1-8" id="passengers" />
+								<input type="text" class="select__input" placeholder="1-8" id="reserv-passengers" />
 								<svg class="select__arrow">
 									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 								</svg>
@@ -179,15 +197,15 @@
 						<h5 class="title hero__item-title">Flight number</h5>
 						<div class="hero__input-wrapper">
 							<svg class="hero__input-icon">
-								<use xlink:href='img/icons/icons.svg#icon-plane'></use>
+								<use xlink:href="img/icons/icons.svg#icon-plane"></use>
 							</svg>
-							<input type="text" placeholder="FR1964, BT1454..." class="input-simple hero__input-title" id="flight-number">
+							<input type="text" placeholder="FR1964, BT1454..." class="input-simple hero__input-title" id="reserv-flight-number" />
 						</div>
 					</div>
 					<a href="#" class="btn-main hero__btn" id="reserve-btn">
 						<span>Reserve</span>
 						<svg class="hero__btn-arrow">
-							<use xlink:href='img/icons/icons.svg#icon-arrow'></use>
+							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 						</svg>
 					</a>
 				</div>
@@ -224,7 +242,7 @@
 					<div class="container _min">
 						<div class="schedule__head">
 							<span class="schedule__online">We are online</span>
-							<span class="schedule__last">Last request 13:10</span>
+							<span class="schedule__last" id="table-time"></span>
 						</div>
 						<h2 class="title title-2 schedule__title">Real-time travel schedule for the next 5 days</h2>
 						<p class="schedule__content">
@@ -778,7 +796,7 @@
 		</div>
 	</footer>
 
-	<script src="js/app.min.js?_v=20241108115916"></script>
+	<script src="js/app.min.js?_v=20241111151229"></script>
 </body>
 
 </html>
