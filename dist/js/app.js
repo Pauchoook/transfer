@@ -400,7 +400,7 @@
             const time = document.querySelector("#reserv-time").value;
             const passengers = document.querySelector("#reserv-passengers").value;
             const flightNumber = document.querySelector("#reserv-flight-number").value;
-            const link = `/reserv.html?depature=${depature}&destination=${destination}&date=${date}&time=${time}&passengers=${passengers}&flightNumber=${flightNumber}`;
+            const link = `/transfer/dist/reserv.html?depature=${depature}&destination=${destination}&date=${date}&time=${time}&passengers=${passengers}&flightNumber=${flightNumber}`;
             window.location.href = link;
         }));
     }
@@ -3716,25 +3716,6 @@
             timeHtml.textContent = `Last request ${hours}:${minutes}`;
         }
     }
-    function gReviews() {
-        const reviews = document.querySelector(".g-reviews");
-        if (reviews) {
-            let scrollY = window.scrollY;
-            const debounce = (fn, delay) => {
-                let timer;
-                return () => {
-                    clearTimeout(timer);
-                    if (reviews.classList.contains("active") && scrollY < window.scrollY) reviews.classList.remove("active");
-                    timer = setTimeout((() => fn.apply(this, arguments)), delay);
-                };
-            };
-            const onScrollEnd = () => {
-                reviews.classList.add("active");
-                scrollY = window.scrollY;
-            };
-            window.addEventListener("scroll", debounce(onScrollEnd, 1e3));
-        }
-    }
     mediaAdaptive();
     spoller();
     dropdown();
@@ -3748,5 +3729,4 @@
     initReserve();
     sliders();
     tableTime();
-    gReviews();
 })();

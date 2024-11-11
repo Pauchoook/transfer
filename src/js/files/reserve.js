@@ -10,7 +10,7 @@ export function reserveLink() {
       const time = document.querySelector("#reserv-time").value;
       const passengers = document.querySelector("#reserv-passengers").value;
       const flightNumber = document.querySelector("#reserv-flight-number").value;
-      const link = `/reserv.html?depature=${depature}&destination=${destination}&date=${date}&time=${time}&passengers=${passengers}&flightNumber=${flightNumber}`;
+      const link = `/transfer/dist/reserv.html?depature=${depature}&destination=${destination}&date=${date}&time=${time}&passengers=${passengers}&flightNumber=${flightNumber}`;
 
       window.location.href = link;
     });

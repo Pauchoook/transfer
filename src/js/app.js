@@ -11,7 +11,6 @@ import more from "./files/more.js";
 import initSelectInput from "./files/initSelectInput.js";
 import sliders from "./files/sliders.js";
 import tableTime from "./files/tableTime.js";
-import gReviews from "./files/google-reviews.js";
 
 functions.mediaAdaptive();
 spoller();
@@ -26,4 +25,3 @@ sides();
 initReserve();
 sliders();
 tableTime();
-gReviews();
